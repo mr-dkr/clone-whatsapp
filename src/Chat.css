@@ -2,6 +2,7 @@
     flex:0.65;
     display: flex;
     flex-direction: column;
+    overflow: scroll;
 }
 .chat__header{
     padding: 20px;
@@ -82,6 +83,9 @@
     border:none;
     border-radius: 30px;
 }
+*>input:focus{   
+    outline:none;
+}
 
 .chat__footer>form>button{
     display: none;
@@ -89,4 +93,8 @@
 .chat__footer > .MuiSvgIcon-root{
     padding:10px;
     color: gray;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
